@@ -1,0 +1,51 @@
+import java.lang.*;
+ interface I1
+{
+  void run();
+}
+ interface I2
+{
+  void run();
+}
+interface I3
+{
+    void delete();
+}
+interface I4
+{
+     void addProduct();
+}
+interface I5 extends I2,I3,I4
+{
+    void createUser();
+}
+public class inter{
+
+     public static void main(String []args){
+        B b=new B();
+        b.run();
+        b.delete();
+        b.addProduct();
+        b.createUser();
+     }
+}
+
+ class B implements I5 
+{
+    public void run()
+    {
+        System.out.println("Run of class B");
+    }
+    public void delete()
+    {
+        System.out.println("Delete of class B");
+    }
+    public void addProduct()
+    {
+        System.out.println("Add product of class B");
+    }
+    public void createUser()
+    {
+        System.out.println("CreateUser of class B");
+    }
+}
