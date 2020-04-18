@@ -64,4 +64,4 @@ Answer to the Question:
 1. In this case there is no ambiguity even though both the interfaces are having same method because
  methods in an interfaces are always abstract by default which doesn't let them give their implementation in interface itself.
  2.run(), delete(), addProduct(),createUser().
- 3. I5 
+ 3. Yes we can do it. An Interface can extend multiple classes.
