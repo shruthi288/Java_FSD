@@ -1,0 +1,34 @@
+import java.lang.*;
+ interface notepad{
+    public void os();
+}
+ public class inter{
+
+     public static void main(String []args){
+        winOs w=new winOs(); 
+        macOs m=new macOs();
+        ubuntu u=new ubuntu();
+        w.os();
+        m.os();
+        u.os();
+     }
+}
+
+class winOs implements notepad{
+   public void os()
+    {
+        System.out.println("Windows OS notepad");
+    }
+}
+class macOs implements notepad{
+    public void os()
+    {
+        System.out.println("Mac OS notepad");
+    }
+}
+class ubuntu implements notepad{
+    public void os()
+    {
+        System.out.println("Ubentu OS notepad");
+    }
+}
