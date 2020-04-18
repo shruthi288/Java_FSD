@@ -1,0 +1,40 @@
+public class employeecount{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        employee e;
+        e=new admin();
+        e=new admin();
+        e=new admin();
+        e=new admin();
+        e=new admin();
+        e=new manager();
+        e=new manager();
+        e=new manager();
+        System.out.println(e.count);
+     }
+}
+
+
+class employee{
+  static  int count=0;
+    
+}
+class admin extends employee
+{ 
+    admin()
+{
+    count++;
+}
+    
+    
+}
+class manager extends employee
+{
+    
+    manager()
+    {
+        count++;
+    }
+   
+}
