@@ -1,0 +1,6 @@
+var s=3/0; 
+var f=Nan;
+
+Note:
+typeof(s);   answer:number
+typeof(f);   answer:undefined
