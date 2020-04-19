@@ -1,0 +1,12 @@
+const getRectArea = function(width, height) 
+{
+  return width * height;
+
+}
+
+
+console.log(getRectArea(5,6));
+
+note:
+The function keyword can be used to define a function inside an expression.
+It define functions using the Function constructor and a function declaration.
