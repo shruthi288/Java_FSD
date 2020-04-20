@@ -37,3 +37,36 @@ public class interview{
     }
      }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Output:
+Joannah MCA 11:00
+Natasha B-Tech 14:00
+Anne BCA 15:00
+Beryl MCA 12:00
+Johan B-Tech 18:00
+Kia MCA 17:00
+Jim BCA 10:00
+Hannah B-Tech 9:00
+Jonathan BCA 16:00
+
+
+
+
