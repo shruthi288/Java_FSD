@@ -1,0 +1,39 @@
+import java.util.*;
+import java.text.*;
+class candidates
+{
+    String name,qualification,time;
+        candidates(String name,String qualification,String time)
+    { 
+        this.name=name;
+        this.qualification=qualification;
+        this.time=time;
+    }
+}
+public class interview{
+
+     public static void main(String []args){
+        HashSet<candidates> s=new HashSet<candidates>();  
+        candidates c=new candidates("Jim","BCA","10:00");
+        candidates c1=new candidates("Joannah","MCA","11:00");
+        candidates c2=new candidates("Hannah","B-Tech","9:00");
+        candidates c3=new candidates("Beryl","MCA","12:00");
+        candidates c4=new candidates("Natasha","B-Tech","14:00");
+        candidates c5=new candidates("Anne","BCA","15:00");
+        candidates c6=new candidates("Jonathan","BCA","16:00");
+        candidates c7=new candidates("Kia","MCA","17:00");
+        candidates c8=new candidates("Johan","B-Tech","18:00");
+        s.add(c);
+        s.add(c1);
+        s.add(c2);
+        s.add(c3);
+        s.add(c4);
+        s.add(c5);
+        s.add(c6);
+        s.add(c7);
+        s.add(c8);
+        for(candidates b:s){  
+    System.out.println(b.name+" "+b.qualification+" "+b.time );  
+    }
+     }
+}
