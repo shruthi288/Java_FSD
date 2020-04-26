@@ -1,0 +1,59 @@
+import java.util.*;
+public class details {
+ static int add=0;
+    public static class Student {
+
+        private String name;
+        private int mark;
+        private int id;
+        
+        public  Student(String name, int mark,int id) {
+            this.name = name;
+            this.mark = mark;
+            this.id=id;
+            Main.add=add+mark;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getMark() {
+            return mark;
+        }
+
+        public void setMark(int mark) {
+            this.mark = mark;
+        }
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+    }
+
+    public static void main(String[] args) {
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(new Student("Jim", 75,101));
+        studentList.add(new Student("Kim", 85,102));
+        studentList.add(new Student("Joannah", 90,103));
+        studentList.add(new Student("Hannah", 55,104));
+        studentList.add(new Student("Sampath", 62,105));
+
+        Student student =  Collections.max(studentList, Comparator.comparing(s -> s.getMark()));
+        System.out.println("The Highest mark student is : " + student.getName());
+
+        student =  Collections.min(studentList, Comparator.comparing(s -> s.getMark()));
+        System.out.println("The Lowest Mark student is : " + student.getName());
+       System.out.println("Total mark of the students : "+add);
+        
+
+
+    }
+}
