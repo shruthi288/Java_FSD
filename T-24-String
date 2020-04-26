@@ -1,0 +1,24 @@
+import java.util.*;
+import java.util.stream.*;
+public class string
+{
+	public static void main(String[] args) {
+		List<String>a=new ArrayList();
+		a.add("hi");
+		a.add("hello");
+		a.add("welcome");
+		a.add("when");
+		a.add("help");
+		a.add("hire");
+		a.add("India");
+		a.add("race");
+		a.add("in");
+		Stream<String> s1=a.stream();
+	   List l1=s1.filter(x->x.length()>4).collect(Collectors.toList());
+		System.out.println(l1);
+	}
+}
+
+
+
+
